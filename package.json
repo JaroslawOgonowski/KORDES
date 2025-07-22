@@ -1,7 +1,7 @@
 {
   "name": "kordes",
   "version": "0.2.0",
-  "private": false,
+  "private": true,
   "homepage": "https://jaroslawogonowski.github.io/KORDES/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
