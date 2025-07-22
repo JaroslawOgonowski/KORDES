@@ -28,6 +28,7 @@ import g21 from "../../images/Felgi/21.JPG";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { useState } from "react";
+import { BackToMain } from "../../common/BackToMain/BackToMain";
 
 
 export const Renowacja = () => {
@@ -78,6 +79,7 @@ export const Renowacja = () => {
   };
 
   return (
+    <>
     <StyledSection>
       <Title>
         Renowacja Felg w Żyrardowie i okolicach – Piaskowanie, Malowanie
@@ -126,5 +128,7 @@ export const Renowacja = () => {
         </ModalGateway>
       </GalleryBox>
     </StyledSection>
+    <BackToMain />
+    </>
   );
 };

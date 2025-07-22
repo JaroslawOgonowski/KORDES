@@ -40,6 +40,7 @@ import {
 } from "../renowacja-felg/styled";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { useState } from "react";
+import { BackToMain } from "../../common/BackToMain/BackToMain";
 
 export const Malowanie = () => {
   const items = [
@@ -93,6 +94,7 @@ export const Malowanie = () => {
   };
 
   return (
+    <>
     <StyledSection>
       <Title>
         Malowanie proszkowe – trwała ochrona i perfekcyjny wygląd Twoich
@@ -183,5 +185,7 @@ export const Malowanie = () => {
         </ModalGateway>
       </GalleryBox>
     </StyledSection>
+    <BackToMain />
+    </>
   );
 };
