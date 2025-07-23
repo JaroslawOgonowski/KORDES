@@ -232,7 +232,7 @@ export const Malowanie = () => {
               icon={e6}
             />
           </List>
-          Oferujemy{" "}
+          <div> Oferujemy{" "}
           <strong>
             kompleksową obsługę – od pojedynczych detali po całe serie
             produkcyjne
@@ -241,7 +241,8 @@ export const Malowanie = () => {
           usługi i prywatne zlecenia. Malujemy{" "}
           <b>nie tylko części samochodowe</b>
           ! Zajmujemy się kompleksowym zabezpieczaniem i malowaniem niemal
-          każdego metalowego elementu.
+          każdego metalowego elementu.</div>
+         
           <br />
           <br />
           <b style={{ fontSize: "2em" }}>W naszej ofercie znajdziesz:</b>

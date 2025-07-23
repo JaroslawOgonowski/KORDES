@@ -18,7 +18,7 @@ export const BIO = styled.div`
 export const List = styled.div`
   margin: 0;
   margin-top: 50px;
-  margin-bottom: 140px;
+  margin-bottom: 60px;
   padding: 0;
   width: 100%;
   font-size: 1.1em;
@@ -175,6 +175,11 @@ display: grid;
 grid-template-columns: auto 0.7fr 1fr;
 gap: 30px;
 align-items: center;
+transition: 500ms;
+
+&:hover{
+  transform: scale(1.03);
+}
 `
 export const List2 = styled.ul`
   margin: 0;
@@ -191,6 +196,11 @@ width: auto;
 display: flex;
 gap: 20px;
 align-items: center;
+transition: 500ms;
+
+&:hover{
+  transform: scale(1.03);
+}
 
 `
 

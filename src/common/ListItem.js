@@ -7,6 +7,13 @@ const ListI = styled.li`
   margin-bottom: 10px;
   font-size: 1.2em;
   gap: 20px;
+cursor: default;
+  transition: 500ms;
+
+&:hover{
+  transform: scale(1.01);
+  filter: brightness(1.2);
+}
 `;
 export const Icon = styled.img`
   width: 60px;
