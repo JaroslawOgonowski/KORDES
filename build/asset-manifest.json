@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/KORDES/static/js/main.7726dcc4.js",
+    "main.js": "/KORDES/static/js/main.52ae925d.js",
     "static/media/7.JPG": "/KORDES/static/media/7.8c9cbc035d70d0230adc.JPG",
     "static/media/14.JPG": "/KORDES/static/media/14.9ea712859f95a427d7ac.JPG",
     "static/media/15.JPG": "/KORDES/static/media/15.1a5e148a6e2a7c3d90c0.JPG",
@@ -36,6 +36,27 @@
     "static/media/3.JPG": "/KORDES/static/media/3.cbd4b060adde5bd8b58e.JPG",
     "static/media/24.JPG": "/KORDES/static/media/24.98add64b70051da996e2.JPG",
     "static/media/wyp2.jpg": "/KORDES/static/media/wyp2.8eea8443abb33a9ac909.jpg",
+    "static/media/mInfo5.png": "/KORDES/static/media/mInfo5.a3601a553672d8f71589.png",
+    "static/media/mInfo2.png": "/KORDES/static/media/mInfo2.d5a9f838a9f3dd120a39.png",
+    "static/media/mInfo1.png": "/KORDES/static/media/mInfo1.d042a6b1e267ed8b9148.png",
+    "static/media/mInfo4.png": "/KORDES/static/media/mInfo4.987152ded7832efd6ee9.png",
+    "static/media/o12.jpg": "/KORDES/static/media/o12.3ea4be18b5d21424ecf6.jpg",
+    "static/media/o17.jpg": "/KORDES/static/media/o17.81ed096ddb4bc67cff70.jpg",
+    "static/media/mInfo6.png": "/KORDES/static/media/mInfo6.de410b5710a6c786f417.png",
+    "static/media/o10.jpg": "/KORDES/static/media/o10.62db3c6d5652c86efc1c.jpg",
+    "static/media/mInfo3.png": "/KORDES/static/media/mInfo3.be5940e47253cce14809.png",
+    "static/media/o11.jpg": "/KORDES/static/media/o11.3391968be4a533f036f6.jpg",
+    "static/media/o15.jpg": "/KORDES/static/media/o15.87863f820c6fe3ff891f.jpg",
+    "static/media/o9.jpg": "/KORDES/static/media/o9.9be178873dd16fd3ba59.jpg",
+    "static/media/o1.jpg": "/KORDES/static/media/o1.8cd3bdc090107d7a8ad3.jpg",
+    "static/media/o4.jpg": "/KORDES/static/media/o4.a63b9560321a1f797b6f.jpg",
+    "static/media/o5.jpg": "/KORDES/static/media/o5.3a193ba1cb1672775cd2.jpg",
+    "static/media/o8.jpg": "/KORDES/static/media/o8.24e08937a951307d83dd.jpg",
+    "static/media/o16.jpg": "/KORDES/static/media/o16.cbb54fe5405aca0d8b23.jpg",
+    "static/media/o13.jpg": "/KORDES/static/media/o13.c0f1be58317c4f7b0d25.jpg",
+    "static/media/o6.jpg": "/KORDES/static/media/o6.d3b0301cd432e851e758.jpg",
+    "static/media/o14.jpg": "/KORDES/static/media/o14.08f2d3c0a2dabb5ccc65.jpg",
+    "static/media/o7.jpg": "/KORDES/static/media/o7.8333c01618d2ab39bd57.jpg",
     "static/media/4362958_tiktok_logo_social media_icon.svg": "/KORDES/static/media/4362958_tiktok_logo_social media_icon.af3d7b7e1bf0c9a564865a75c68cdd58.svg",
     "static/media/phone-number-svgrepo-com.svg": "/KORDES/static/media/phone-number-svgrepo-com.8767887fb19b6c11b5ed7c709d831ac8.svg",
     "static/media/7086697_messenger_facebook messenger_messenger logo_icon.svg": "/KORDES/static/media/7086697_messenger_facebook messenger_messenger logo_icon.9ab04ebc37a3d8f22f8348c545a8cc53.svg",
@@ -44,9 +65,9 @@
     "static/media/834722_facebook_icon.svg": "/KORDES/static/media/834722_facebook_icon.5ad0d6ce6f02f29cb7ca4874c59f464f.svg",
     "static/media/email-svgrepo-com.svg": "/KORDES/static/media/email-svgrepo-com.0a602da8dc66e9a7607e396b26da2db6.svg",
     "static/media/Facebook_black.svg": "/KORDES/static/media/Facebook_black.e9a4bbe5bd52741710004d4b40efb7fb.svg",
-    "main.7726dcc4.js.map": "/KORDES/static/js/main.7726dcc4.js.map"
+    "main.52ae925d.js.map": "/KORDES/static/js/main.52ae925d.js.map"
   },
   "entrypoints": [
-    "static/js/main.7726dcc4.js"
+    "static/js/main.52ae925d.js"
   ]
 }

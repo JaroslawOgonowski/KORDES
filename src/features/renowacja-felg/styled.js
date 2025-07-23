@@ -175,8 +175,22 @@ display: grid;
 grid-template-columns: auto 0.7fr 1fr;
 gap: 30px;
 align-items: center;
- 
 `
+export const List2 = styled.ul`
+  margin: 0;
+  margin-top: 30px;  margin-bottom: 50px;
+  padding: 0;
+  list-style: none;
+  font-size: 1.1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  `
+export const LI2 = styled.li`
+width: auto;
+display: flex;
+gap: 20px;
+align-items: center;
 
-
+`
 

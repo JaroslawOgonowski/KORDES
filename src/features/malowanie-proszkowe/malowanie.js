@@ -38,6 +38,23 @@ import mi3 from "../../images/etapy/mInfo3.png";
 import mi4 from "../../images/etapy/mInfo4.png";
 import mi5 from "../../images/etapy/mInfo5.png";
 import mi6 from "../../images/etapy/mInfo6.png";
+import o1 from "../../images/icons/oferta/o1.jpg";
+import o2 from "../../images/icons/oferta/o2.jpg";
+import o3 from "../../images/icons/oferta/o3.jpg";
+import o4 from "../../images/icons/oferta/o4.jpg";
+import o5 from "../../images/icons/oferta/o5.jpg";
+import o6 from "../../images/icons/oferta/o6.jpg";
+import o7 from "../../images/icons/oferta/o7.jpg";
+import o8 from "../../images/icons/oferta/o8.jpg";
+import o9 from "../../images/icons/oferta/o9.jpg";
+import o10 from "../../images/icons/oferta/o10.jpg";
+import o11 from "../../images/icons/oferta/o11.jpg";
+import o12 from "../../images/icons/oferta/o12.jpg";
+import o13 from "../../images/icons/oferta/o13.jpg";
+import o14 from "../../images/icons/oferta/o14.jpg";
+import o15 from "../../images/icons/oferta/o15.jpg";
+import o16 from "../../images/icons/oferta/o16.jpg";
+import o17 from "../../images/icons/oferta/o17.jpg";
 
 import styled, { css, keyframes } from "styled-components";
 import {
@@ -46,7 +63,9 @@ import {
   Felga,
   GalleryBox,
   Gun,
+  LI2,
   List,
+  List2,
   ListT,
   STableRow,
   StyledSection,
@@ -62,14 +81,23 @@ export const TableRow = ({ title, description, icon, extraPadding }) => {
   return (
     <STableRow extraPadding={extraPadding}>
       <td>
-        <Icon src={icon} />
+        <Icon src={icon} alt={title} />
       </td>
-      <td><b>{title}</b></td>
+      <td>
+        <b>{title}</b>
+      </td>
       <td>{description}</td>
     </STableRow>
   );
 };
 
+export const ListItem2 = ({ content, icon }) => {
+  return (
+    <LI2>
+      <Icon src={icon} alt={content} /> <div>{content}</div>
+    </LI2>
+  );
+};
 export const Malowanie = () => {
   const photos = [
     { src: g0, width: 1, height: 1 },
@@ -214,26 +242,27 @@ export const Malowanie = () => {
           <b>nie tylko części samochodowe</b>
           ! Zajmujemy się kompleksowym zabezpieczaniem i malowaniem niemal
           każdego metalowego elementu.
-          <br />W naszej ofercie znajdziesz:
-          <ul>
-            <li>bramy i ogrodzenia,</li>
-            <li>balustrady i poręcze,</li>
-            <li>konstrukcje stalowe,</li>
-            <li>profile aluminiowe i stalowe,</li>
-            <li>narzędzia,</li>
-            <li>półki i meble metalowe,</li>
-            <li>regały magazynowe,</li>
-            <li>szafy i skrzynki metalowe,</li>
-            <li>felgi i ramy rowerowe,</li>
-            <li>elementy maszyn i urządzeń przemysłowych,</li>
-            <li>obudowy urządzeń mechanicznych i elektrycznych,</li>
-            <li>kasetony i panele elewacyjne,</li>
-            <li>stelaże reklamowe i konstrukcje wystawiennicze,</li>
-            <li>części motocyklowe i rowerowe,</li>
-            <li>
-              elementy wyposażenia ogrodu (ławki, pergole, donice metalowe).
-            </li>
-          </ul>
+          <br />
+          <br />
+          <b style={{ fontSize: "2em" }}>W naszej ofercie znajdziesz:</b>
+          <List2>
+            <ListItem2 icon={o1} content="bramy i ogrodzenia" />
+            <ListItem2 icon={o2} content="balustrady i poręcze" />
+            <ListItem2 icon={o3} content="konstrukcje stalowe" />
+            <ListItem2 icon={o4} content="profile aluminiowe i stalowe" />
+            <ListItem2 icon={o5} content="narzędzia" />
+            <ListItem2 icon={o6} content="półki" />
+            <ListItem2 icon={o7} content="regały magazynowe" />
+            <ListItem2 icon={o8} content="szafy i skrzynki metalowe" />
+            <ListItem2 icon={o9} content="felgi" />
+            <ListItem2 icon={o10} content="ramy i części rowerowe" />
+            <ListItem2 icon={o11} content="elementy maszyn i urządzeń przemysłowych" />
+            <ListItem2 icon={o12} content="obudowy urządzeń mechanicznych i elektrycznych" />
+            <ListItem2 icon={o14} content="stelaże reklamowe i konstrukcje wystawiennicze" />
+            <ListItem2 icon={o15} content="części motocyklowe" />
+            <ListItem2 icon={o16} content="elementy wyposażenia ogrodu" />
+            <ListItem2 icon={o17} content="meble metalowe" />
+          </List2>
           Dzięki nowoczesnym technologiom lakierniczym zapewniamy trwałą ochronę
           przed korozją, estetyczne wykończenie i indywidualne dopasowanie
           kolorystyki. Niezależnie od kształtu czy rozmiaru elementu –
