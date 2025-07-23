@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/KORDES/static/js/main.52ae925d.js",
+    "main.js": "/KORDES/static/js/main.0a0207fa.js",
     "static/media/7.JPG": "/KORDES/static/media/7.8c9cbc035d70d0230adc.JPG",
     "static/media/14.JPG": "/KORDES/static/media/14.9ea712859f95a427d7ac.JPG",
     "static/media/15.JPG": "/KORDES/static/media/15.1a5e148a6e2a7c3d90c0.JPG",
@@ -65,9 +65,9 @@
     "static/media/834722_facebook_icon.svg": "/KORDES/static/media/834722_facebook_icon.5ad0d6ce6f02f29cb7ca4874c59f464f.svg",
     "static/media/email-svgrepo-com.svg": "/KORDES/static/media/email-svgrepo-com.0a602da8dc66e9a7607e396b26da2db6.svg",
     "static/media/Facebook_black.svg": "/KORDES/static/media/Facebook_black.e9a4bbe5bd52741710004d4b40efb7fb.svg",
-    "main.52ae925d.js.map": "/KORDES/static/js/main.52ae925d.js.map"
+    "main.0a0207fa.js.map": "/KORDES/static/js/main.0a0207fa.js.map"
   },
   "entrypoints": [
-    "static/js/main.52ae925d.js"
+    "static/js/main.0a0207fa.js"
   ]
 }
