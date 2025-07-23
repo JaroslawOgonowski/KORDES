@@ -21,9 +21,15 @@ export const List = styled.div`
   margin-bottom: 140px;
   padding: 0;
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  background-color:   rgba(34, 31, 32, 0.86) 60%,;
 `;
+export const ListT = styled.h2`
+  margin-bottom: -20px;
+  padding: 0;
+  font-size: 1.4em;
 
+`
 const pulse = keyframes`
   0% {
     font-weight: 400;
@@ -110,7 +116,7 @@ export const Gun = styled.img`
   height: 400px;
   position: absolute;
   z-index: -1;
-  top: -220px;
+  top: 0px;
   right: -200px;
   transform-origin: right center;
   transform: rotate(-10deg);
@@ -152,3 +158,25 @@ export const Title = styled.h2`
       rgba(0, 0, 0, 0.98)
     );
 `;
+
+export const Table = styled.table`
+width: 80%;
+display: flex;
+flex-direction: column;
+margin-top:40px;
+padding: 0;
+align-self: flex-start;
+`
+
+export const STableRow = styled.tr`
+padding-left: calc(20px + ${(props) => props.extraPadding}px);
+border-bottom: 1px solid #ccc;
+display: grid;
+grid-template-columns: auto 0.7fr 1fr;
+gap: 30px;
+align-items: center;
+ 
+`
+
+
+
