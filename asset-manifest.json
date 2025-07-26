@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.js": "/KORDES/static/js/main.9fb311ec.js",
+    "main.js": "/KORDES/static/js/main.434e66fd.js",
     "static/media/7.JPG": "/KORDES/static/media/7.8c9cbc035d70d0230adc.JPG",
     "static/media/14.JPG": "/KORDES/static/media/14.9ea712859f95a427d7ac.JPG",
     "static/media/15.JPG": "/KORDES/static/media/15.1a5e148a6e2a7c3d90c0.JPG",
     "static/media/background.png": "/KORDES/static/media/background.2581f17e5e24998b4c46.png",
+    "static/media/toczenie3.mp4": "/KORDES/static/media/toczenie3.21e42516c719c79dcfc8.mp4",
     "static/media/logo.png": "/KORDES/static/media/logo.6351b80a04675207149b.png",
     "static/media/roztaczenieOtworu.mp4": "/KORDES/static/media/roztaczenieOtworu.a29a047222a5f95c6c0f.mp4",
     "static/media/felga.png": "/KORDES/static/media/felga.ea44c7eaf48a7965829f.png",
@@ -22,6 +23,7 @@
     "static/media/18.JPG": "/KORDES/static/media/18.6be5804331eb03926571.JPG",
     "static/media/21.JPG": "/KORDES/static/media/21.274eee690878d8c46d06.JPG",
     "static/media/4.JPG": "/KORDES/static/media/4.e71860e691cc6ce92fdd.JPG",
+    "static/media/toczenie2.mp4": "/KORDES/static/media/toczenie2.4c0b7e02964064949643.mp4",
     "static/media/9.JPG": "/KORDES/static/media/9.cd4f4ec7ce833f09c8ec.JPG",
     "static/media/12.JPG": "/KORDES/static/media/12.e42f682f528bb65bffd7.JPG",
     "static/media/gun10.png": "/KORDES/static/media/gun10.495edd26f82e1c8afdde.png",
@@ -74,9 +76,9 @@
     "static/media/834722_facebook_icon.svg": "/KORDES/static/media/834722_facebook_icon.5ad0d6ce6f02f29cb7ca4874c59f464f.svg",
     "static/media/email-svgrepo-com.svg": "/KORDES/static/media/email-svgrepo-com.0a602da8dc66e9a7607e396b26da2db6.svg",
     "static/media/Facebook_black.svg": "/KORDES/static/media/Facebook_black.e9a4bbe5bd52741710004d4b40efb7fb.svg",
-    "main.9fb311ec.js.map": "/KORDES/static/js/main.9fb311ec.js.map"
+    "main.434e66fd.js.map": "/KORDES/static/js/main.434e66fd.js.map"
   },
   "entrypoints": [
-    "static/js/main.9fb311ec.js"
+    "static/js/main.434e66fd.js"
   ]
 }
