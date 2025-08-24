@@ -14,4 +14,9 @@ body{
 *, ::after, ::before {
   box-sizing: inherit;
 };
+
+html {
+  scroll-behavior: smooth;
+}
 `
+

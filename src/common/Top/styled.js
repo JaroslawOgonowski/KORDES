@@ -4,10 +4,10 @@ export const Wrapper = styled.section`
   width: 100%;
   display: flex;
   position: relative;
-  min-height: 200px;
+  min-height: 150px;
   background-image: ${({ bg }) => `url(${bg})`};
   z-index: 0;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 
   &::before {
     content: "";
@@ -64,7 +64,7 @@ const scroll2 = keyframes`
 `;
 
 export const BannerWrapper = styled.div`
-  margin-top: 100px;
+  margin-top: 50px;
   position: relative;
   width: 100%;
   overflow: hidden;

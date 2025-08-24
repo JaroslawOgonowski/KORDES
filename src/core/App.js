@@ -5,17 +5,31 @@ import { Main } from "../common/Main";
 import { Footer } from "../common/Footer";
 import { Top } from "../common/Top/Top";
 import { Renowacja } from "../features/renowacja-felg/renowacja";
-import { SocialSection } from "../common/Socials/SocialSection";
+import { SocialSection, SocialsIcons } from "../common/Socials/SocialSection";
 import { Tiles } from "../common/Top/Tiles";
 import { Malowanie } from "../features/malowanie-proszkowe/malowanie";
-import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
+import { BrowserRouter, useLocation } from "react-router-dom/cjs/react-router-dom.min";
+import { useEffect } from "react";
+import { Wynajem } from "../features/wynajem/wynajem";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [pathname]);
+
+  return null;
+}
 function App() {
   return (
     <>
       <GlobalStyle />
       <HashRouter>
+        <ScrollToTop />
+        <SocialsIcons />
         <Top />
+
         <Main>
           <Switch>
             <Route path="/renowacja-felg">
@@ -23,6 +37,9 @@ function App() {
             </Route>
             <Route path="/malowanie-proszkowe">
               <Malowanie />
+            </Route>
+             <Route path="/wynajem">
+              <Wynajem />
             </Route>
             <Route path="/strona-glowna">
               <Tiles />

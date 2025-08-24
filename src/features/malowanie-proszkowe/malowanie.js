@@ -25,6 +25,9 @@ import g21 from "../../images/Malowanie/21.JPG";
 import g22 from "../../images/Malowanie/22.JPG";
 import g23 from "../../images/Malowanie/23.JPG";
 import g24 from "../../images/Malowanie/24.JPG";
+import g25 from "../../images/Malowanie/25.JPG";
+import g26 from "../../images/Malowanie/26.JPG";
+
 import e1 from "../../images/etapy/etap1.jpg";
 import e2 from "../../images/etapy/etap2.jpg";
 import e3 from "../../images/etapy/etap3.jpg";
@@ -125,6 +128,8 @@ export const Malowanie = () => {
     { src: g22, width: 4, height: 3 },
     { src: g23, width: 4, height: 3 },
     { src: g24, width: 4, height: 3 },
+    { src: g25, width: 2, height: 4 },
+    { src: g26, width: 2, height: 4 },
   ];
 
   const [current, setCurrent] = useState(0);
@@ -232,17 +237,18 @@ export const Malowanie = () => {
               icon={e6}
             />
           </List>
-          <div> Oferujemy{" "}
-          <strong>
-            kompleksową obsługę – od pojedynczych detali po całe serie
-            produkcyjne
-          </strong>
-          . Obsługujemy klientów z różnych branż, od przemysłu i budownictwa po
-          usługi i prywatne zlecenia. Malujemy{" "}
-          <b>nie tylko części samochodowe</b>
-          ! Zajmujemy się kompleksowym zabezpieczaniem i malowaniem niemal
-          każdego metalowego elementu.</div>
-         
+          <div>
+            {" "}
+            Oferujemy{" "}
+            <strong>
+              kompleksową obsługę – od pojedynczych detali po całe serie
+              produkcyjne
+            </strong>
+            . Obsługujemy klientów z różnych branż, od przemysłu i budownictwa
+            po usługi i prywatne zlecenia. Malujemy{" "}
+            <b>nie tylko części samochodowe</b>! Zajmujemy się kompleksowym
+            zabezpieczaniem i malowaniem niemal każdego metalowego elementu.
+          </div>
           <br />
           <br />
           <b style={{ fontSize: "2em" }}>W naszej ofercie znajdziesz:</b>
@@ -257,9 +263,18 @@ export const Malowanie = () => {
             <ListItem2 icon={o8} content="szafy i skrzynki metalowe" />
             <ListItem2 icon={o9} content="felgi" />
             <ListItem2 icon={o10} content="ramy i części rowerowe" />
-            <ListItem2 icon={o11} content="elementy maszyn i urządzeń przemysłowych" />
-            <ListItem2 icon={o12} content="obudowy urządzeń mechanicznych i elektrycznych" />
-            <ListItem2 icon={o14} content="stelaże reklamowe i konstrukcje wystawiennicze" />
+            <ListItem2
+              icon={o11}
+              content="elementy maszyn i urządzeń przemysłowych"
+            />
+            <ListItem2
+              icon={o12}
+              content="obudowy urządzeń mechanicznych i elektrycznych"
+            />
+            <ListItem2
+              icon={o14}
+              content="stelaże reklamowe i konstrukcje wystawiennicze"
+            />
             <ListItem2 icon={o15} content="części motocyklowe" />
             <ListItem2 icon={o16} content="elementy wyposażenia ogrodu" />
             <ListItem2 icon={o17} content="meble metalowe" />
