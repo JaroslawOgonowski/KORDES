@@ -88,7 +88,7 @@ export const BannerWrapper = styled.div`
 `;
 
 export const ScrollingText = styled.h1`
-padding-left: 10px;
+  padding-left: 10px;
   user-select: none;
   filter: brightness(3);
   position: absolute;
@@ -106,7 +106,7 @@ padding-left: 10px;
 `;
 
 export const ScrollingText2 = styled.h2`
-padding-left: 10px;
+  padding-left: 10px;
   user-select: none;
   filter: brightness(3);
   position: absolute;
@@ -125,7 +125,6 @@ padding-left: 10px;
 `;
 
 export const TilesNav = styled.nav`
-
   width: 100%;
   max-width: 100%;
 `;
@@ -151,7 +150,8 @@ export const SingleTile = styled.li`
   filter: grayscale(0.8);
   border: 3px solid rgba(31, 30, 30, 0.8);
 
-  transition: font-size 0.3s ease, color 0.3s ease, filter 0.3s ease, border 0.3s ease;
+  transition: font-size 0.3s ease, color 0.3s ease, filter 0.3s ease,
+    border 0.3s ease;
 
   -webkit-mask-image: linear-gradient(
     45deg,
@@ -159,31 +159,27 @@ export const SingleTile = styled.li`
     rgba(0, 0, 0, 0.2) 50%,
     #000 75%
   );
-  mask-image: linear-gradient(
-    45deg,
-    #000 25%,
-    rgb(0, 0, 0) 50%,
-    #000 75%
-  );
+  mask-image: linear-gradient(45deg, #000 25%, rgb(0, 0, 0) 50%, #000 75%);
   -webkit-mask-size: 800%;
   mask-size: 800%;
   -webkit-mask-position: 0;
   mask-position: 0;
- 
+transition: 300ms;
+
   &:hover {
     filter: grayscale(0);
     color: white;
     font-size: 3em;
     border-color: rgba(214, 10, 10, 0.6);
-    -webkit-mask-position: 120%;
-    mask-position: 120%;
+    -webkit-mask-position: 100%;
+    mask-position: 100%;
     opacity: 1;
-      align-items: flex-end;
+    align-items: flex-end;
   }
 
   /* Warstwa wierzchnia - drugi obraz */
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     background-image: ${({ bgHover }) => `url(${bgHover})`};
@@ -201,7 +197,7 @@ export const SingleTile = styled.li`
 
   /* Efekt błysku */
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     background: linear-gradient(
@@ -222,16 +218,29 @@ export const SingleTile = styled.li`
   }
 `;
 
-
 export const List = styled.li`
   list-style: none;
   padding: 0%;
-  margin-left: -4px;
+  margin-left: 0;
 
   width: 100%;
   max-width: 100%;
   display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-columns: 33.2% 33.2% 33.2%;
+  gap: 5px;
+  align-content: center;
+  justify-content: center;
+`;
+
+export const ListF2 = styled.li`
+  list-style: none;
+  padding: 0%;
+  margin-left: 0;
+
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
   gap: 5px;
   align-content: center;
   justify-content: center;
@@ -245,6 +254,6 @@ export const Text = styled.strong`
   padding: 0 10px;
   text-align: center;
   z-index: 999;
+
   margin-bottom: 30px;
 `;
-

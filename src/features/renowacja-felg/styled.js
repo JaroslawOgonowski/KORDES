@@ -172,9 +172,10 @@ width: 80%;
 margin-left: 10%;
 display: flex;
 flex-direction: column;
-margin-top:40px;
+margin-top:20px;
 padding: 0;
 align-self: flex-start;
+margin-bottom: 40px;
 `
 export const STableRow = styled.tr`
 padding-left: calc(20px + ${(props) => props.extraPadding}px);

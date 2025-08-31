@@ -12,6 +12,7 @@ import { BrowserRouter, useLocation } from "react-router-dom/cjs/react-router-do
 import { useEffect } from "react";
 import { Wynajem } from "../features/wynajem/wynajem";
 
+
 function ScrollToTop() {
   const { pathname } = useLocation();
 
