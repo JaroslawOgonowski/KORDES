@@ -11,6 +11,7 @@ import { Malowanie } from "../features/malowanie-proszkowe/malowanie";
 import { BrowserRouter, useLocation } from "react-router-dom/cjs/react-router-dom.min";
 import { useEffect } from "react";
 import { Wynajem } from "../features/wynajem/wynajem";
+import GoToTopButton from "../common/GoUp/GoUp";
 
 
 function ScrollToTop() {
@@ -34,7 +35,7 @@ function App() {
         <Main>
           <Switch>
             <Route path="/renowacja-felg">
-              <Renowacja />
+              <Renowacja backToMain={true}/>
             </Route>
             <Route path="/malowanie-proszkowe">
               <Malowanie />
@@ -53,6 +54,7 @@ function App() {
         </Main>
         <SocialSection />
         <Footer />
+      <GoToTopButton showAt={250} size={56} shape="rounded" />
       </HashRouter>
     </>
   );

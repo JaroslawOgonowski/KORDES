@@ -126,7 +126,7 @@ const PhaseArticle = ({ articleContent, id }) => {
   );
 };
 
-export const Renowacja = () => {
+export const Renowacja = ({backToMain}) => {
   const photos = [
     { src: g0, width: 0.8, height: 1 },
     { src: g1, width: 4, height: 3 },
@@ -356,7 +356,8 @@ export const Renowacja = () => {
           </ModalGateway>
         </GalleryBox>
       </StyledSection>
-      <BackToMain />
+      {backToMain === true? <BackToMain /> : null}
+      
     </>
   );
 };

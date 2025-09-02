@@ -65,7 +65,7 @@ const List = styled.ul`
 const PriceNote = styled.p`
   margin-top: 0.5rem;
   font-size: 0.95rem;
-  color: #000000cb;
+  color: #b4b4b4ff;
   font-style: italic;
 
   strong {

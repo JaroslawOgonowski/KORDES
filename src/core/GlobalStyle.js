@@ -9,6 +9,9 @@ body{
   background-color:rgb(253, 253, 253);
   color:rgb(22, 2, 2);
   overflow-x: hidden;
+    width: 100%;
+    
+  
 };
 
 *, ::after, ::before {
@@ -17,6 +20,11 @@ body{
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+    overflow-x: hidden;
 }
 `
 

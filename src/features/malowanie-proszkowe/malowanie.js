@@ -67,10 +67,13 @@ import {
   GalleryBox,
   Gun,
   LI2,
+  LI2Title,
   List,
   List2,
   ListT,
   STableRow,
+  STRDescript,
+  STRTitle,
   StyledSection,
   Table,
   Title,
@@ -87,9 +90,9 @@ export const TableRow = ({ title, description, icon, extraPadding }) => {
         <Icon src={icon} alt={title} />
       </td>
       <td>
-        <b>{title}</b>
+        <STRTitle>{title}</STRTitle>
       </td>
-      <td>{description}</td>
+      <STRDescript>{description}</STRDescript>
     </STableRow>
   );
 };
@@ -127,9 +130,9 @@ export const Malowanie = () => {
     { src: g21, width: 4, height: 3 },
     { src: g22, width: 4, height: 3 },
     { src: g23, width: 4, height: 3 },
-    { src: g24, width: 4, height: 3 },
-    { src: g25, width: 2, height: 4 },
-    { src: g26, width: 2, height: 4 },
+    { src: g24, width: 4, height: 4 },
+    { src: g25, width: 3, height: 4 },
+    { src: g26, width: 3, height: 4 },
   ];
 
   const [current, setCurrent] = useState(0);
@@ -251,7 +254,7 @@ export const Malowanie = () => {
           </div>
           <br />
           <br />
-          <b style={{ fontSize: "2em" }}>W naszej ofercie znajdziesz:</b>
+          <LI2Title>W naszej ofercie znajdziesz:</LI2Title>
           <List2>
             <ListItem2 icon={o1} content="bramy i ogrodzenia" />
             <ListItem2 icon={o2} content="balustrady i poręcze" />

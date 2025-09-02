@@ -6,6 +6,8 @@ export const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  overflow-x: hidden; /* ukrywa poziomy scroll i ucina wystający content */
+
   @media (max-width: 1360px) {
     width: 100%;  
   }

@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const Socials = styled.section`
-margin-top: 100px;
+margin-top: 80px;
 width: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
+max-width: 100%;
+flex-wrap: wrap;
 `
 export const SocialsIconsContainer = styled.section`
 margin-top: 10px;
@@ -24,7 +26,7 @@ color: black;
 text-decoration: none;
 margin-top: 100px;
 font-size: 2em;
-margin-left:40px;
+margin-left: 40px;
 display: flex;
 align-items: center;
 gap: 10px;
@@ -55,8 +57,9 @@ scale: 1.05;
   }
 `
 export const SocialRowT = styled(SocialRow)`
+width: 100%;
   color: rgb(80, 83, 83);
-  font-size: 1.6em;
+  font-size: 1.5em;
   cursor: default;
 
   &:hover {

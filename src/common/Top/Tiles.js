@@ -8,6 +8,7 @@ import b from "../../images/b.jpg";
 import wyp2 from "../../images/wyp2.jpg";
 import { List, SingleTile, Text, TilesNav } from "./styled";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Renowacja } from "../../features/renowacja-felg/renowacja";
 
 
 export const Tile = () => {
@@ -16,6 +17,7 @@ export const Tile = () => {
 
 export const Tiles = () => {
   return (
+    <>
     <TilesNav>
       <List>
         <Link to="/malowanie-proszkowe" style={{textDecoration: "none"}} ><SingleTile bg={z1}  bgHover={z2}><Text>Malowanie proszkowe</Text></SingleTile></Link>
@@ -23,6 +25,8 @@ export const Tiles = () => {
          <Link to="/wynajem" style={{textDecoration: "none"}} ><SingleTile bg={ag5} bgHover={ag4}><Text>Wynajem</Text></SingleTile></Link>
       </List>
     </TilesNav>
+     <Renowacja />
+     </>
 
   );
 };
