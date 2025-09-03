@@ -6,4 +6,8 @@ export const FotoAg = styled.section`
   align-items: center;
   gap: 10px;
   margin: 20px 0;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
 `;

@@ -36,6 +36,10 @@ const Container = styled.section`
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial;
+
+    @media (max-width: 960px) {
+    padding: 16px;
+    }
 `;
 
 const Section = styled.div`
@@ -72,6 +76,10 @@ const Card = styled.div`
   border: 1px solid #e6eef6;
   padding: 16px;
   border-radius: 12px;
+
+  @media (max-width: 960px) {
+    padding: 8px;
+    }
 `;
 
 const List = styled.ul`
@@ -343,7 +351,7 @@ export const WynajemAgregat = () => {
             </Conditions>
           </Card>
 
-          <Paragraph style={{ marginTop: 20, fontSize: 13, color: "#475569" }}>
+          <Paragraph style={{ marginTop: 20, fontSize: 20, color: "#475569" }}>
             Masz dodatkowe wymagania (np. moc agregatu, doposażenie, miejsce
             dostawy)? Napisz, a dopasuję ofertę.
           </Paragraph>

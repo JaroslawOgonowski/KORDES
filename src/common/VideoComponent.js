@@ -91,7 +91,13 @@ const PlayIcon = styled(FaPlay)`
   justify-content: flex-start;
   align-items: self-start;
   gap: 20px;
-  margin-bottom: 10px;`;
+  margin-bottom: 10px;
+  
+  @media (max-width: 960px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  `;
 
 export const ImageBox = styled.div`
   width: 100%;
@@ -102,7 +108,7 @@ export const ImageBox = styled.div`
   gap: 10px;`
 
   export const ImageInVBox = styled.img`
-    height: auto;
+  height: auto;
   max-height: 50vh;
   width: auto;
   max-width: 100%;

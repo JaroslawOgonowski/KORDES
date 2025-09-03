@@ -1,6 +1,11 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { GalleryBox, StyledSection, Title, TitleBox } from "../renowacja-felg/styled";
+import {
+  GalleryBox,
+  StyledSection,
+  Title,
+  TitleBox,
+} from "../renowacja-felg/styled";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import r1 from "../../images/wynajemRenault/r1.jpg";
@@ -18,6 +23,10 @@ const Container = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+
+  @media (max-width: 960px) {
+    padding: 0;
+  }
 `;
 
 const Section = styled.section`
@@ -27,6 +36,10 @@ const Section = styled.section`
   border-radius: 1rem;
   margin-bottom: 2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+
+  @media (max-width: 960px) {
+    padding: 10px;
+  }
 `;
 const SectionPrime = styled.section`
   background: #1c1c1c;
@@ -36,6 +49,10 @@ const SectionPrime = styled.section`
   margin-bottom: 2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
   width: 90%;
+
+  @media (max-width: 960px) {
+    padding: 10px;
+  }
 `;
 const Title2 = styled.h2`
   font-size: 1.6rem;
@@ -44,6 +61,12 @@ const Title2 = styled.h2`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+
+  @media (max-width: 960px) {
+    width: 100%;
+    font-size: 1.1em;
+    text-align: center;
+  }
 `;
 
 const List = styled.ul`
@@ -77,6 +100,10 @@ const SubTitle = styled.p`
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 2rem;
+
+  @media (max-width: 960px) {
+    font-size: 1.1em;
+  }
 `;
 
 const Grid = styled.div`
@@ -84,8 +111,9 @@ const Grid = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     grid-template-columns: 1fr;
+    padding: 0;
   }
 `;
 
@@ -94,12 +122,21 @@ const Card = styled.div`
   padding: 1.5rem;
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  @media (max-width: 960px) {
+    padding: 1rem;
+    padding-bottom: 30px;
+  }
 `;
 
 const CardTitle = styled.h3`
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
+
+  @media (max-width: 960px) {
+    margin: 10px;
+  }
 `;
 
 const CTA = styled.div`
@@ -121,21 +158,25 @@ const CTA = styled.div`
       background: #1d4ed8;
     }
   }
+
+  @media (max-width: 960px) {
+    padding-bottom: 20px;
+  }
 `;
 
 export const WynajemRenault = () => {
-    const photos = [
-        { src: r1, width: 0.8, height: 1 },
-        { src: r2, width: 4, height: 3 },
-        { src: r3, width: 4, height: 3 },
-        { src: r4, width: 4, height: 3 },
-        { src: r5, width: 4, height: 3 },
-        { src: r6, width: 4, height: 3 },
-        { src: r7, width: 3, height: 3 },
-        { src: r8, width: 3, height: 3 },
-    ];
+  const photos = [
+    { src: r1, width: 0.8, height: 1 },
+    { src: r2, width: 4, height: 3 },
+    { src: r3, width: 4, height: 3 },
+    { src: r4, width: 4, height: 3 },
+    { src: r5, width: 4, height: 3 },
+    { src: r6, width: 4, height: 3 },
+    { src: r7, width: 3, height: 3 },
+    { src: r8, width: 3, height: 3 },
+  ];
 
-      const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
   const openLightbox = (event, { photo, index }) => {
@@ -203,7 +244,7 @@ export const WynajemRenault = () => {
           </CTA>
         </SectionPrime>
 
-           <GalleryBox>
+        <GalleryBox>
           <Gallery
             photos={photos}
             onClick={openLightbox}

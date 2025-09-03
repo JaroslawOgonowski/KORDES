@@ -189,7 +189,7 @@ export const Title = styled.h2`
     );
 
   @media (max-width: 960px) {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 `;
 
@@ -235,6 +235,7 @@ export const STableRow = styled.tr`
   @media (max-width: 960px) {
     gap: 15px;
     padding-left: calc(5px + ${(props) => props.extraPadding}px);
+    margin-left: -10%;
   }
 `;
 export const STRTitle = styled.td`

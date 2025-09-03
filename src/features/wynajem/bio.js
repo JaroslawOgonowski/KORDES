@@ -11,6 +11,10 @@ box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
 font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 "Helvetica Neue", Arial;
 color: #e5e7eb;
+
+@media (max-width: 960px) {
+padding: 20px;
+}
 `;
 
 
@@ -22,6 +26,10 @@ font-weight: 800;
 background: linear-gradient(90deg, #dc143c, #ff4b6e);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+
+@media (max-width: 960px) {
+padding: 5px;
+}
 `;
 
 
@@ -39,6 +47,13 @@ transition: transform 0.3s ease, background 0.3s ease;
 &:hover {
 transform: translateY(-4px);
 background: rgba(220, 20, 60, 0.08);
+}
+
+@media (max-width: 960px) {
+padding: 10px;
+flex-direction: column;
+align-items: center;
+font-size: 1em;
 }
 `;
 
@@ -67,6 +82,10 @@ color: #f3f4f6;
 strong {
 color: #ff4b6e;
 font-weight: 700;
+}
+
+@media (max-width: 960px) {
+font-size: 1em;
 }
 `;
 export const BIO =  () => {

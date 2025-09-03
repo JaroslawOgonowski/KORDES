@@ -352,6 +352,11 @@ export const ListF2 = styled.li`
   gap: 0;
   align-content: center;
   justify-content: center;
+
+    @media (max-width: 960px) {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
 `;
 
 export const Text = styled.strong`

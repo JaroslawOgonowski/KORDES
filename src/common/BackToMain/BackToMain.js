@@ -78,6 +78,12 @@ const Back = styled.button`
     margin: 0;
     padding: 10px;
     
+    @media (max-width: 960px) { 
+      width: 60%;
+      padding: 8px;
+      margin-left: -10%;
+    }
+
 `;
 
 
