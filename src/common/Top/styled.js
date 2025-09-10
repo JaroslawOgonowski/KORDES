@@ -52,13 +52,27 @@ const scroll = keyframes`
   }
 `;
 
+const scrollWeb = keyframes`
+  0% {
+    transform: translateX(10%);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+`;
+
 const scroll2 = keyframes`
   0% {
     transform: translateX(100%);
     opacity: 0;
   }
-  49%{ opacity: 1;}
-    50% {
+  10%{ opacity: 1;}
+    20% {
     opacity: 1;
   }
   90% {
@@ -117,6 +131,7 @@ export const ScrollingText = styled.h1`
   @media (max-width: 960px) {
     font-size: 1.4rem;
     padding-left: 10px;
+    animation: ${scrollWeb} 35s linear infinite;
   }
 `;
 
@@ -139,8 +154,7 @@ export const ScrollingText2 = styled.h2`
     0 0 40px rgba(220, 20, 20, 0.6);
 
   @media (max-width: 960px) {
-    font-size: 1.4rem;
-    padding-left: 10px;
+    display: none;
   }
 `;
 
@@ -353,7 +367,7 @@ export const ListF2 = styled.li`
   align-content: center;
   justify-content: center;
 
-    @media (max-width: 960px) {
+  @media (max-width: 960px) {
     grid-template-columns: 1fr;
     width: 100%;
   }

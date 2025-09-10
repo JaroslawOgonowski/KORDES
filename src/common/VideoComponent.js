@@ -84,6 +84,10 @@ const Overlay = styled.div`
 const PlayIcon = styled(FaPlay)`
   color: white;
   font-size: 48px;
+
+  @media (max-width: 960px) {
+    display: none;
+  }
 `;
  export const Videosbox = styled.div`
  width: 100%  ;

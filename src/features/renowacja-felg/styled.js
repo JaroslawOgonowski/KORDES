@@ -200,6 +200,7 @@ export const Table = styled.table`
   margin-top: 40px;
   padding: 0;
   align-self: flex-start;
+  margin-left: 10%;
 
   @media (max-width: 960px) {
     width: 100%;
