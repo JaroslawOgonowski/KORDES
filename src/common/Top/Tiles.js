@@ -6,7 +6,7 @@ import ag4 from "../../images/agregat/ag4.jpg";
 import ag5 from "../../images/agregat/ag5.jpg";
 import { List, SingleTile, Text, TilesNav } from "./styled";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import { Renowacja } from "../../features/renowacja-felg/renowacja";
+import AboutKordes from "../../features/onas";
 
 
 export const Tile = () => {
@@ -23,7 +23,7 @@ export const Tiles = () => {
          <Link to="/wynajem" style={{textDecoration: "none"}} ><SingleTile bg={ag5} bgHover={ag4}><Text>Wynajem</Text></SingleTile></Link>
       </List>
     </TilesNav>
-     <Renowacja />
+     <AboutKordes/>
      </>
 
   );
