@@ -169,11 +169,11 @@ export default function AboutKordes() {
           <Card>
             <SectionSubtitle>ℹ️ O nas</SectionSubtitle>
             <Small>
-              Jesteśmy lokalną lakiernią proszkową oferującą kompleksowe usługi
+              Zajmujemy się specjalistyczną renowaccją felg oraz oferujemy kompleksowe usługi
               malarskie — od pojedynczych detali po większe serie produkcyjne.
               Nasze doświadczenie w renowacji felg i lakierowaniu elementów
               przemysłowych sprawia, że obsługujemy zarówno klientów
-              indywidualnych, jak i firmy.
+              indywidualnych, jak i firmy lokalnie, z Polski i całej Europy.
             </Small>
 
             <SectionTitle>⭐ Co nas wyróżnia</SectionTitle>
@@ -182,11 +182,15 @@ export default function AboutKordes() {
                 Wieloletnie doświadczenie w renowacji felg i lakiernictwie
                 proszkowym
               </li>
+               <li>
+                Liczne współprace z firmami stawiającymi na jakość- od lokalnych po największe korporacje.
+              </li>
               <li>
                 Kompleksowa obsługa: przygotowanie, malowanie, wykończenie
               </li>
               <li>Elastyczność: prace pojedyncze i seryjne</li>
               <li>Szybki kontakt i możliwość umawiania zleceń telefonicznie</li>
+              <li>Bezpośredni kontakt i własnoręczne zaangażowanie właściclea firmy na każdym etapie</li>
             </ul>
 
             <SectionTitle>🛠️ Usługi</SectionTitle>

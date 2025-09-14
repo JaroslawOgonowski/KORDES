@@ -2,6 +2,8 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { ListF2, SingleTile, Text, TilesNav } from "../../common/Top/styled";
 import ag1 from "../../images/agregat/ag1.jpg";
 import b from "../../images/b.jpg";
+import n3 from "../../images/WynajemNissan/n3.jpg";
+import n2 from "../../images/WynajemNissan/n2.jpg";
 import { StyledSection } from "../renowacja-felg/styled";
 
 import styled from "styled-components";
@@ -9,6 +11,7 @@ import { WynajemRenault } from "./wynajemRenault";
 import { useEffect, useState } from "react";
 import { WynajemAgregat } from "./wynajemAgregat";
 import { BackToMain } from "../../common/BackToMain/BackToMain";
+import { WynajemNissanNT400 } from "./wynajemNissan";
 
 const Container = styled(StyledSection)`
   width: 100%;
@@ -51,13 +54,22 @@ export const Wynajem = () => {
             >
               <Text>Renault Trafic Long</Text>
             </SingleTile>
+             <SingleTile
+
+              to="/wynajem"
+              bg={n3}
+              bgHover={n3}
+              onClick={() => setActiveCard("nissan")}
+            >
+              <Text>Nissan NT400</Text>
+            </SingleTile>
           </ListF2>
         </TilesNav>
       </Container>
 
       {activeCard === "agregat" && <WynajemAgregat />}
       {activeCard === "renault" && <WynajemRenault />}
-
+      {activeCard === "nissan" && <WynajemNissanNT400 />} 
       <BackToMain />
     </>
   );

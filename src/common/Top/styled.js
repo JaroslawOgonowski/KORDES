@@ -362,7 +362,7 @@ export const ListF2 = styled.li`
   width: 100%;
   max-width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 0;
   align-content: center;
   justify-content: center;
