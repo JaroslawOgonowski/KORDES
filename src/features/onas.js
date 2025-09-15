@@ -299,7 +299,7 @@ export default function AboutKordes() {
           <Carda>
             <SectionTitle color="white">👤 {DATA.owner}</SectionTitle>
             <ImgPlaceholder>
-              <IMG src={p} alt="Arkadiusz Rdes" />
+              <IMG src={p} alt="Arkadiusz Rdes - właściciel" />
             </ImgPlaceholder>
             <OwnerRow>
               <div style={{ flex: "1" }}>
@@ -317,7 +317,7 @@ export default function AboutKordes() {
               🏭 Nasza pracownia
             </SectionTitle>
             <ImgPlaceholder>
-              <IMG src={pracownia} alt="Pracownia KORDES" />
+              <IMG src={pracownia} alt="Pracownia firmy KORDES" />
             </ImgPlaceholder>
           </Carda>
 

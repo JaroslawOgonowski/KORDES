@@ -127,7 +127,7 @@ const PhaseArticle = ({ articleContent, id }) => {
   return (
     <StyledArticle id={id}>
       <TitleBox>
-        <Icon src={articleContent.icon} />
+        <Icon src={articleContent.icon} alt={`ikona ${articleContent.title}`} />
         <ArticleTitle>{articleContent.title}</ArticleTitle>
       </TitleBox>
       <ArticleContent>
@@ -278,7 +278,7 @@ export const Renowacja = ({ backToMain }) => {
         <List>
           <Subtitle>Wykonujemy:</Subtitle>
           <FBox>
-            <Felga src={f} alt="" />
+            <Felga src={f} alt="felga wykonująca obrót" />
           </FBox>
           <ServicesGrid>
             <ServicesTile
@@ -322,13 +322,31 @@ export const Renowacja = ({ backToMain }) => {
 
         {/* ✅ Nadanie ID artykułom */}
         <PhaseArticle id="pp" articleContent={articles[0]} />
-         <ImageBox>
-          <ImageInVBox src={pp1} alt="przygotowanie powierzchni felgi do pełnej renowacji" />
-          <ImageInVBox src={pp2} alt="przygotowanie powierzchni felgi do pełnej renowacji" />
-          <ImageInVBox src={pp3} alt="przygotowanie powierzchni felgi do pełnej renowacji" />
-          <ImageInVBox src={pp4} alt="przygotowanie powierzchni felgi do pełnej renowacji" />
-          <ImageInVBox src={pp5} alt="przygotowanie powierzchni felgi do pełnej renowacji" />
-          <ImageInVBox src={pp6} alt="przygotowanie powierzchni felgi do pełnej renowacji" />
+        <ImageBox>
+          <ImageInVBox
+            src={pp1}
+            alt="przygotowanie powierzchni felgi do pełnej renowacji"
+          />
+          <ImageInVBox
+            src={pp2}
+            alt="przygotowanie powierzchni felgi do pełnej renowacji"
+          />
+          <ImageInVBox
+            src={pp3}
+            alt="przygotowanie powierzchni felgi do pełnej renowacji"
+          />
+          <ImageInVBox
+            src={pp4}
+            alt="przygotowanie powierzchni felgi do pełnej renowacji"
+          />
+          <ImageInVBox
+            src={pp5}
+            alt="przygotowanie powierzchni felgi do pełnej renowacji"
+          />
+          <ImageInVBox
+            src={pp6}
+            alt="przygotowanie powierzchni felgi do pełnej renowacji"
+          />
         </ImageBox>
         <PhaseArticle id="malowanie" articleContent={articles[1]} />
         <ImageBox>
@@ -367,6 +385,7 @@ export const Renowacja = ({ backToMain }) => {
             frameBorder="0"
             allowFullScreen={true}
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            title="Odtwarzanie oryginalnego kształtu felgi 1"
           ></iframe>
           <iframe
             src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkordeslakierniaproszkowa%2Fposts%2Fpfbid02HzEupuJbESze1bvr8u1oeZ413nnaGk3D5y2ngD27epvaiCL7T3dAau36B92t7BM3l&show_text=false&width=500"
@@ -376,6 +395,7 @@ export const Renowacja = ({ backToMain }) => {
             frameBorder="0"
             allowFullScreen={true}
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            title="Odtwarzanie oryginalnego kształtu felgi 2"
           ></iframe>
           <iframe
             src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkordeslakierniaproszkowa%2Fposts%2Fpfbid02xnBpNGMTWEjgWfpJocXCiGFTmHwd5mn73UsS562yG6iaBYRgAcEpzvfX3Cj2WqmAl&show_text=false&width=500"
@@ -385,6 +405,7 @@ export const Renowacja = ({ backToMain }) => {
             frameBorder="0"
             allowFullScreen={true}
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            title="Odtwarzanie oryginalnego kształtu felgi 3"
           ></iframe>
         </Videosbox>
 

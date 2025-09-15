@@ -336,7 +336,8 @@ export const SingleTile = styled.li`
   }
 `;
 
-export const List = styled.li`
+export const List = styled.ul`
+  margin: 0;
   list-style: none;
   padding: 0%;
   margin-left: 0;
@@ -354,7 +355,8 @@ export const List = styled.li`
   }
 `;
 
-export const ListF2 = styled.li`
+export const ListF2 = styled.ul`
+  margin: 0;
   list-style: none;
   padding: 0%;
   margin-left: 0;

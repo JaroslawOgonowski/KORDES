@@ -24,7 +24,22 @@ export const SocialsIconsContainer = styled.section`
   right: 0;
   z-index: 1000;
 `;
+export const SocialRowTitle = styled.div`
+  color: black;
+  text-decoration: none;
+  margin-top: 60px;
+  font-size: 2em;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+  color: #ff0000ff;
 
+  @media (max-width: 960px) {
+    margin-top: 20px;
+  }
+`; 
 export const SocialRow = styled.a`
   color: black;
   text-decoration: none;

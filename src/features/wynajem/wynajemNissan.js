@@ -73,16 +73,16 @@ const List = styled.ul`
   }
 `;
 
-const PriceNote = styled.p`
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
-  color: #b4b4b4ff;
-  font-style: italic;
+// const PriceNote = styled.p`
+//   margin-top: 0.5rem;
+//   font-size: 0.95rem;
+//   color: #b4b4b4ff;
+//   font-style: italic;
 
-  strong {
-    color: crimson;
-  }
-`;
+//   strong {
+//     color: crimson;
+//   }
+// `;
 
 const SubTitle = styled.p`
   font-size: 1.2rem;

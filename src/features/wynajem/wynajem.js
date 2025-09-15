@@ -1,9 +1,7 @@
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { ListF2, SingleTile, Text, TilesNav } from "../../common/Top/styled";
 import ag1 from "../../images/agregat/ag1.jpg";
 import b from "../../images/b.webp";
 import n3 from "../../images/WynajemNissan/n3.jpg";
-import n2 from "../../images/WynajemNissan/n2.jpg";
 import { StyledSection } from "../renowacja-felg/styled";
 
 import styled from "styled-components";

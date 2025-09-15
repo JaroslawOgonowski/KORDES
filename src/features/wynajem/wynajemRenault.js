@@ -4,7 +4,6 @@ import {
   GalleryBox,
   StyledSection,
   Title,
-  TitleBox,
 } from "../renowacja-felg/styled";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";

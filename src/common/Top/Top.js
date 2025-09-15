@@ -9,7 +9,7 @@ export const Top = () => {
   return (
     <Link to="strona-glowna">
     <Wrapper bg={bg}>
-      <Logo src={logo} />
+      <Logo src={logo} alt="logo KORDES"/>
       <BannerWrapper>
         <ScrollingText>{"  " + text +  "  " + text + "  "}</ScrollingText>
         <ScrollingText2>{"  " + text + "  " +  text + "  "}</ScrollingText2>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import styled, { css, keyframes } from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const glowingAnimationGenerate = keyframes`
     0% { background-position: 0 0; }

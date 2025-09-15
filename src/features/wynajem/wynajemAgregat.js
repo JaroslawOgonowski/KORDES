@@ -42,18 +42,18 @@ const Container = styled.section`
     }
 `;
 
-const Section = styled.div`
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
-  margin: 16px 0;
-`;
+// const Section = styled.div`
+//   display: flex;
+//   gap: 14px;
+//   align-items: flex-start;
+//   margin: 16px 0;
+// `;
 
-const Title2 = styled.h2`
-  font-size: 20px;
-  margin: 0 0 12px 0;
-  color: #0f172a;
-`;
+// const Title2 = styled.h2`
+//   font-size: 20px;
+//   margin: 0 0 12px 0;
+//   color: #0f172a;
+// `;
 
 const Paragraph = styled.p`
   margin: 8px 0;

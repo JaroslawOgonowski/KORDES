@@ -53,17 +53,14 @@ import o9 from "../../images/icons/oferta/o9.jpg";
 import o10 from "../../images/icons/oferta/o10.jpg";
 import o11 from "../../images/icons/oferta/o11.jpg";
 import o12 from "../../images/icons/oferta/o12.jpg";
-import o13 from "../../images/icons/oferta/o13.jpg";
 import o14 from "../../images/icons/oferta/o14.jpg";
 import o15 from "../../images/icons/oferta/o15.jpg";
 import o16 from "../../images/icons/oferta/o16.jpg";
 import o17 from "../../images/icons/oferta/o17.jpg";
 
-import styled, { css, keyframes } from "styled-components";
 import {
   BIO,
   FBox,
-  Felga,
   GalleryBox,
   Gun,
   LI2,
@@ -201,7 +198,7 @@ export const Malowanie = () => {
         <List>
           <ListT>Etapy naszego procesu malowania proszkowego:</ListT>
           <FBox>
-            <Gun src={g} alt="" />
+            <Gun src={g} alt="pistolet lakierniczy" />
           </FBox>
           <List>
             <ListItem
