@@ -2,7 +2,7 @@
   "name": "kordes",
   "version": "0.2.0",
   "private": true,
-  "homepage": "https://jaroslawogonowski.github.io/KORDES/",
+  "homepage": "https://felgi-koredes.pl",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.16.5",

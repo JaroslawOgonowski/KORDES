@@ -6,35 +6,7 @@ import pracownia from "../images/pracownia.webp";
 import { Helmet } from "react-helmet-async";
 // --- styled-components ---
 
-const Container = styled.div`
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial;
-  max-width:1240px;
-  margin: 36px auto;
-  padding: 28px;
-  background: #080000e0;
-  border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(60, 61, 63, 0.08);
-`;
 
-const Head = styled.header`
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  margin-bottom: 20px;
-`;
-
-const Logo = styled.div`
-  width: 110px;
-  height: 110px;
-  border-radius: 12px;
-  background: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  color: #333;
-`;
 
 const LogoIcon = styled.img`
   width: 100%;
@@ -45,23 +17,6 @@ const TitleGroup = styled.div`
   flex: 1;
 `;
 
-const Title = styled.h1`
-  margin: 0;
-  font-size: 22px;
-  color: white;
-`;
-
-const Subtitle = styled.p`
-  margin: 4px 0 0 0;
-  color: #ccc;
-  font-size: 14px;
-`;
-
-const Grid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 30%;
-  gap: 22px;
-`;
 
 const Card = styled.section`
   background: #fafafa;
@@ -102,14 +57,6 @@ const ContactItem = styled.li`
   font-size: 14px;
 `;
 
-const MapFrame = styled.div`
-  width: 100%;
-  height: 400px;
-  border-radius: 8px;
-  overflow: hidden;
-  background: #ddd;
-`;
-
 const OwnerRow = styled.div`
   display: flex;
   gap: 12px;
@@ -130,6 +77,101 @@ const SectionTitle = styled.h3`
 const SectionSubtitle = styled.h2`
   margin-top: 0;
 `;
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  gap: 22px;
+
+  @media (max-width: 960px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const Aside = styled.aside`
+  margin-top: -150px;
+  @media (max-width: 960px) {
+    margin-top: 0;
+  }
+  `;
+
+
+const Container = styled.div`
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  max-width: 1240px;
+  margin: 20px auto;
+  padding: 18px;
+  background: #111111f3;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(60, 61, 63, 0.08);
+
+  @media (max-width: 960px) {
+    padding: 14px;
+    margin: 12px;
+  }
+`;
+
+const Head = styled.header`
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+`;
+
+const Logo = styled.div`
+  width: 90px;
+  height: 90px;
+
+  @media (max-width: 960px) {
+    width: 70px;
+    height: 70px;
+  }
+`;
+
+const Title = styled.h1`
+  margin: 0;
+  font-size: 22px;
+  color: white;
+
+  @media (max-width: 960px) {
+    font-size: 18px;
+  }
+`;
+
+const Subtitle = styled.p`
+  margin: 4px 0 0 0;
+  color: #ccc;
+  font-size: 14px;
+
+  @media (max-width: 960px) {
+    font-size: 13px;
+  }
+`;
+
+const MapFrame = styled.div`
+  width: 100%;
+  height: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ddd;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 960px) {
+    height: 250px;
+  }
+`;
+
 
 // --- Dane ---
 const DATA = {
@@ -253,7 +295,7 @@ export default function AboutKordes() {
           </Card>
         </div>
 
-        <aside style={{marginTop:"-150px"}}>
+        <Aside>
           <Carda>
             <SectionTitle color="white">👤 {DATA.owner}</SectionTitle>
             <ImgPlaceholder>
@@ -296,7 +338,7 @@ export default function AboutKordes() {
               <strong>Adres:</strong> {DATA.address}
             </Small>
           </Carda>
-        </aside>
+        </Aside>
       </Grid>
     </Container>
     </>
