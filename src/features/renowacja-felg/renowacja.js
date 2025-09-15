@@ -68,8 +68,17 @@ import s3 from "../../images/s3.JPG";
 import s4 from "../../images/s4.JPG";
 import s5 from "../../images/s5.jpg";
 
-import p1 from "../../videos/vprostowanie.mp4";
-import p2 from "../../videos/vprostowanie2.mp4";
+import pp1 from "../../images/Felgi/pp1.jpg";
+import pp2 from "../../images/Felgi/pp2.jpg";
+import pp3 from "../../images/Felgi/pp3.jpg";
+import pp4 from "../../images/Felgi/pp4.jpg";
+import pp5 from "../../images/Felgi/pp5.jpg";
+import pp6 from "../../images/Felgi/pp6.jpg";
+
+import p1 from "../../videos/prostownie1.mp4";
+import p2 from "../../videos/prostownie2.mp4";
+import p3 from "../../videos/prostowanie3.mp4";
+
 import {
   ImageBox,
   ImageInVBox,
@@ -122,16 +131,19 @@ const PhaseArticle = ({ articleContent, id }) => {
         <ArticleTitle>{articleContent.title}</ArticleTitle>
       </TitleBox>
       <ArticleContent>
-        {Array.isArray(articleContent.content)
-          ? articleContent.content.map((paragraph, i) => <p key={i}>{paragraph}</p>)
-          : <p>{articleContent.content}</p>}
+        {Array.isArray(articleContent.content) ? (
+          articleContent.content.map((paragraph, i) => (
+            <p key={i}>{paragraph}</p>
+          ))
+        ) : (
+          <p>{articleContent.content}</p>
+        )}
       </ArticleContent>
     </StyledArticle>
   );
 };
 
-
-export const Renowacja = ({backToMain}) => {
+export const Renowacja = ({ backToMain }) => {
   const photos = [
     { src: g0, width: 0.8, height: 1 },
     { src: g1, width: 4, height: 3 },
@@ -171,65 +183,64 @@ export const Renowacja = ({backToMain}) => {
   };
 
   const articles = [
-  {
-    icon: fp1,
-    title: "Przygotowanie powierzchni",
-    content: [
-      "Przygotowanie powierzchni felg to jeden z najważniejszych i zarazem pierwszych etapów renowacji. W naszej firmie traktujemy go niezwykle poważnie, ponieważ od jakości tego procesu zależy trwałość oraz efekt końcowy całej usługi.",
-      "Stosujemy dwie sprawdzone metody: w przypadku felg aluminiowych starą powłokę lakierniczą usuwamy metodą chemiczną, co pozwala dokładnie oczyścić powierzchnię bez ryzyka uszkodzenia struktury materiału, natomiast felgi stalowe oczyszczamy metodą piaskowania strumieniowo-ściernego, dzięki której skutecznie eliminujemy rdzę, starą powłokę i wszelkie zanieczyszczenia.",
-      "Takie podejście zapewnia idealnie przygotowaną „czystą bazę” do dalszych prac renowacyjnych. Dbamy o równomierne i precyzyjne oczyszczenie całej felgi, również w trudnodostępnych miejscach.",
-      "Dzięki temu masz pewność, że już od pierwszego etapu Twoje felgi trafiają w ręce specjalistów, którzy przykładają ogromną wagę do detali i jakości wykonania. To właśnie staranność na tym etapie sprawia, że końcowy efekt renowacji nie tylko wygląda perfekcyjnie, ale również pozostaje trwały na lata."
-    ],
-  },
-  {
-    icon: fp2,
-    title: "Malowanie proszkowe",
-    content: [
-      "Malowanie proszkowe to nowoczesna metoda, która zapewnia trwałe i estetyczne wykończenie felg.",
-      "Farba proszkowa jest nakładana elektrostatycznie i utwardzana w piecu, co gwarantuje wysoką odporność na uszkodzenia mechaniczne i chemiczne."
-    ],
-  },
-  {
-    icon: fp3,
-    title: "Prostowanie na maszynach Nitromac",
-    content: [
-      "Prostowanie felg to kluczowy etap renowacji, który pozwala na precyzyjne przywrócenie felgom ich fabrycznego kształtu. Nawet niewielkie odkształcenia mogą powodować drgania, nierówną pracę kół, a w konsekwencji obniżać komfort i bezpieczeństwo jazdy.",
-      "Dlatego w naszej firmie przykładamy do tego procesu szczególną wagę. Pracujemy na profesjonalnej prostowarce do felg Nitromac wyposażonej w trzy siłowniki, co umożliwia dokładny pomiar i kontrolowane prostowanie z precyzją sięgającą ułamków milimetra.",
-      "Dzięki temu jesteśmy w stanie skutecznie wyeliminować wszelkie odchylenia od osi obrotu, a felga odzyskuje swoją pierwotną geometrię i pełną funkcjonalność.",
-      "Nasz zespół to doświadczeni specjaliści, regularnie szkolący się z obsługi najnowszych technologii, co gwarantuje, że każda usługa jest wykonywana zgodnie z najwyższymi standardami jakości i bezpieczeństwa.",
-      "Dzięki połączeniu wiedzy, praktyki i nowoczesnych rozwiązań klient ma pewność, że jego felgi nie tylko wyglądają perfekcyjnie, ale przede wszystkim są w pełni bezpieczne w dalszej eksploatacji."
-    ],
-  },
-  {
-    icon: fp4,
-    title: "Spawanie pęknięć",
-    content: [
-      "Nawet najbardziej zniszczone felgi mają u nas drugie życie.",
-      "Specjalizujemy się w profesjonalnym spawaniu i renowacji, dzięki którym przywracamy pełną wytrzymałość oraz bezpieczeństwo nawet w przypadku głębokich pęknięć czy poważnych uszkodzeń.",
-      "To, co inni uznaliby za stracone, my traktujemy jako wyzwanie – i udowadniamy, że felgi renomowanych marek można uratować i ponownie cieszyć się ich niezawodnością."
-    ],
-  },
-  {
-    icon: fp5,
-    title: "Odtwarzanie oryginalnego kształtu felgi",
-    content: [
-      "Zajmujemy się również odtwarzaniem oryginalnego kształtu felg, co ma kluczowe znaczenie, szczególnie w przypadku felg aluminiowych, które są bardziej podatne na odkształcenia.",
-      "Dzięki specjalistycznemu sprzętowi jesteśmy w stanie przywrócić ich pierwotną geometrię – zarówno po uderzeniach w krawężnik, jak i wskutek jazdy po nierównych nawierzchniach.",
-      "Proces ten wymaga dużej precyzji i doświadczenia, ponieważ niewłaściwie wyprostowana felga może prowadzić do wibracji, szybszego zużycia opon, a nawet zagrożenia bezpieczeństwa.",
-      "U nas każda felga przechodzi dokładną kontrolę – stawiamy na jakość i bezpieczeństwo, a nie szybkie, powierzchowne naprawy."
-    ],
-  },
-  {
-    icon: fp6,
-    title: "Toczenie otworu centrującego felgi",
-    content: [
-      "Toczenie otworu centrującego felgi to kluczowy proces, który zapewnia idealne dopasowanie felgi do piasty koła – a tym samym stabilność i bezpieczeństwo jazdy.",
-      "To jedna z naszych specjalizacji. Jako jedyni w Żyrardowie i okolicach wykonujemy tę usługę profesjonalnie, z wykorzystaniem specjalistycznego sprzętu i precyzyjnych technik.",
-      "Nie działamy „przy okazji” – stawiamy na jakość, dokładność i doświadczenie.",
-      "Jeśli zależy Ci na perfekcyjnym spasowaniu felgi z piastą – jesteś we właściwym miejscu."
-    ],
-  },
-];
+    {
+      icon: fp1,
+      title: "Przygotowanie powierzchni",
+      content: [
+        "Przygotowanie powierzchni felg to jeden z najważniejszych i zarazem pierwszych etapów renowacji. W naszej firmie traktujemy go niezwykle poważnie, ponieważ od jakości tego procesu zależy trwałość oraz efekt końcowy całej usługi.",
+        "Stosujemy dwie sprawdzone metody: w przypadku felg aluminiowych starą powłokę lakierniczą usuwamy metodą chemiczną, co pozwala dokładnie oczyścić powierzchnię bez ryzyka uszkodzenia struktury materiału, natomiast felgi stalowe oczyszczamy metodą piaskowania strumieniowo-ściernego, dzięki której skutecznie eliminujemy rdzę, starą powłokę i wszelkie zanieczyszczenia.",
+        "Takie podejście zapewnia idealnie przygotowaną „czystą bazę” do dalszych prac renowacyjnych. Dbamy o równomierne i precyzyjne oczyszczenie całej felgi, również w trudnodostępnych miejscach.",
+        "Dzięki temu masz pewność, że już od pierwszego etapu Twoje felgi trafiają w ręce specjalistów, którzy przykładają ogromną wagę do detali i jakości wykonania. To właśnie staranność na tym etapie sprawia, że końcowy efekt renowacji nie tylko wygląda perfekcyjnie, ale również pozostaje trwały na lata.",
+      ],
+    },
+    {
+      icon: fp2,
+      title: "Malowanie proszkowe",
+      content: [
+        "Malowanie proszkowe to nowoczesna metoda, która zapewnia trwałe i estetyczne wykończenie felg.",
+        "Farba proszkowa jest nakładana elektrostatycznie i utwardzana w piecu, co gwarantuje wysoką odporność na uszkodzenia mechaniczne i chemiczne.",
+      ],
+    },
+    {
+      icon: fp3,
+      title: "Prostowanie na maszynach Nitromac",
+      content: [
+        "Prostowanie felg to kluczowy etap renowacji, który pozwala na precyzyjne przywrócenie felgom ich fabrycznego kształtu. Nawet niewielkie odkształcenia mogą powodować drgania, nierówną pracę kół, a w konsekwencji obniżać komfort i bezpieczeństwo jazdy.",
+        "Dlatego w naszej firmie przykładamy do tego procesu szczególną wagę. Pracujemy na profesjonalnej prostowarce do felg Nitromac wyposażonej w trzy siłowniki, co umożliwia dokładny pomiar i kontrolowane prostowanie z precyzją sięgającą ułamków milimetra.",
+        "Dzięki temu jesteśmy w stanie skutecznie wyeliminować wszelkie odchylenia od osi obrotu, a felga odzyskuje swoją pierwotną geometrię i pełną funkcjonalność.",
+        "Nasz zespół to doświadczeni specjaliści, regularnie szkolący się z obsługi najnowszych technologii, co gwarantuje, że każda usługa jest wykonywana zgodnie z najwyższymi standardami jakości i bezpieczeństwa.",
+        "Dzięki połączeniu wiedzy, praktyki i nowoczesnych rozwiązań klient ma pewność, że jego felgi nie tylko wyglądają perfekcyjnie, ale przede wszystkim są w pełni bezpieczne w dalszej eksploatacji.",
+      ],
+    },
+    {
+      icon: fp4,
+      title: "Spawanie pęknięć",
+      content: [
+        "Nawet najbardziej zniszczone felgi mają u nas drugie życie.",
+        "Specjalizujemy się w profesjonalnym spawaniu i renowacji, dzięki którym przywracamy pełną wytrzymałość oraz bezpieczeństwo nawet w przypadku głębokich pęknięć czy poważnych uszkodzeń. To, co inni uznaliby za stracone, my traktujemy jako wyzwanie – i udowadniamy, że felgi renomowanych marek można uratować i ponownie cieszyć się ich niezawodnością.",
+      ],
+    },
+    {
+      icon: fp5,
+      title: "Odtwarzanie oryginalnego kształtu felgi",
+      content: [
+        "Zajmujemy się również odtwarzaniem oryginalnego kształtu felg, co ma kluczowe znaczenie, szczególnie w przypadku felg aluminiowych, które są bardziej podatne na odkształcenia.",
+        "Dzięki specjalistycznemu sprzętowi jesteśmy w stanie przywrócić ich pierwotną geometrię – zarówno po uderzeniach w krawężnik, jak i wskutek jazdy po nierównych nawierzchniach.",
+        "Proces ten wymaga dużej precyzji i doświadczenia, ponieważ niewłaściwie wyprostowana felga może prowadzić do wibracji, szybszego zużycia opon, a nawet zagrożenia bezpieczeństwa.",
+        "U nas każda felga przechodzi dokładną kontrolę – stawiamy na jakość i bezpieczeństwo, a nie szybkie, powierzchowne naprawy.",
+      ],
+    },
+    {
+      icon: fp6,
+      title: "Toczenie otworu centrującego felgi",
+      content: [
+        "Toczenie otworu centrującego felgi to kluczowy proces, który zapewnia idealne dopasowanie felgi do piasty koła – a tym samym stabilność i bezpieczeństwo jazdy.",
+        "To jedna z naszych specjalizacji. Jako jedyni w Żyrardowie i okolicach wykonujemy tę usługę profesjonalnie, z wykorzystaniem specjalistycznego sprzętu i precyzyjnych technik.",
+        "Nie działamy „przy okazji” – stawiamy na jakość, dokładność i doświadczenie.",
+        "Jeśli zależy Ci na perfekcyjnym spasowaniu felgi z piastą – jesteś we właściwym miejscu.",
+      ],
+    },
+  ];
 
   return (
     <>
@@ -252,9 +263,16 @@ export const Renowacja = ({backToMain}) => {
           wieloletniemu doświadczeniu przywracamy nawet bardzo zniszczone felgi
           do fabrycznego wyglądu i pełnej sprawności. Posiadamy jedną z
           nielicznych w polsce najnowszych maszyn CNC WRM przeznaczoną do
-          renowacji felg a także prostowarce do felg Nitromac wyposażonej w trzy siłowniki. Wykonujemy cały proces renowacji oraz pojedyncze
-          etapy, takie jak piaskowanie, malowanie proszkowe, czy prostowanie. Specjalizujemy się w felgach aluminiowych, stalowych i TIR.
-          <p><b>Skontaktuj się z nami już dziś, a doradzimy i wycenimy wybraną przec Ciebie usługę!</b></p>
+          renowacji felg a także prostowarce do felg Nitromac wyposażonej w trzy
+          siłowniki. Wykonujemy cały proces renowacji oraz pojedyncze etapy,
+          takie jak piaskowanie, malowanie proszkowe, czy prostowanie.
+          Specjalizujemy się w felgach aluminiowych, stalowych i TIR.
+          <p>
+            <b>
+              Skontaktuj się z nami już dziś, a doradzimy i wycenimy wybraną
+              przec Ciebie usługę!
+            </b>
+          </p>
         </BIO>
 
         <List>
@@ -304,6 +322,14 @@ export const Renowacja = ({backToMain}) => {
 
         {/* ✅ Nadanie ID artykułom */}
         <PhaseArticle id="pp" articleContent={articles[0]} />
+         <ImageBox>
+          <ImageInVBox src={pp1} alt="przygotowanie powierzchni felgi do pełnej renowacji" />
+          <ImageInVBox src={pp2} alt="przygotowanie powierzchni felgi do pełnej renowacji" />
+          <ImageInVBox src={pp3} alt="przygotowanie powierzchni felgi do pełnej renowacji" />
+          <ImageInVBox src={pp4} alt="przygotowanie powierzchni felgi do pełnej renowacji" />
+          <ImageInVBox src={pp5} alt="przygotowanie powierzchni felgi do pełnej renowacji" />
+          <ImageInVBox src={pp6} alt="przygotowanie powierzchni felgi do pełnej renowacji" />
+        </ImageBox>
         <PhaseArticle id="malowanie" articleContent={articles[1]} />
         <ImageBox>
           <ImageInVBox src={z1} alt="Malowanie proszkowe" />
@@ -320,6 +346,7 @@ export const Renowacja = ({backToMain}) => {
         <Videosbox>
           <VideoWithOverlay src={p1} />
           <VideoWithOverlay src={p2} />
+          <VideoWithOverlay src={p3} />
         </Videosbox>
         <PhaseArticle id="spawanie" articleContent={articles[3]} />
         <ImageBox>
@@ -383,8 +410,7 @@ export const Renowacja = ({backToMain}) => {
           </ModalGateway>
         </GalleryBox>
       </StyledSection>
-      {backToMain === true? <BackToMain /> : null}
-      
+      {backToMain === true ? <BackToMain /> : null}
     </>
   );
 };

@@ -90,53 +90,11 @@ export const Wrapper = styled.div`
   flex-direction: row;
   align-content: flex-start;
   justify-content: flex-start;
-  max-width: 1216px;
-  margin: auto;
-  margin-bottom: 109px;
-
-  @media (min-width: 1700px) {
-    max-width: 100%;
-    margin-left: 4vw;
-  }
-
-  &&{
-    ${({ animation }) => animation && css`
-    
-  animation: footerAnimation 3s ease normal forwards;
-
-  @keyframes footerAnimation {
-	0%,
-	100% {
-		transform: rotate(0deg);
-		transform-origin: 0 50%;
-	}
-
-	10% {
-		transform: rotate(2deg);
-	}
-
-	20%,
-	40%,
-	60% {
-		transform: rotate(-4deg);
-	}
-
-	30%,
-	50%,
-	70% {
-		transform: rotate(4deg);
-	}
-
-	80% {
-		transform: rotate(-2deg);
-	}
-
-	90% {
-		transform: rotate(2deg);
-	}
-}
-`};
-}
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding-bottom: 50px;
+  background-color: black;
 `;
 
 export const PhoneIcon = styled(Phone)`
