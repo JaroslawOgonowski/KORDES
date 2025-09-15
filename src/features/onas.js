@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../images/logo.png";
-import p from "../images/prezes.jpg";
-import pracownia from "../images/pracownia.jpg";
-
+import logo from "../images/logo.webp";
+import p from "../images/prezes.webp";
+import pracownia from "../images/pracownia.webp";
+import { Helmet } from "react-helmet-async";
 // --- styled-components ---
 
 const Container = styled.div`
@@ -151,6 +151,17 @@ const DATA = {
 // --- Komponent główny ---
 export default function AboutKordes() {
   return (
+    <>
+    <Helmet>
+        <title>KORDES – Renowacja Felg i Lakiernia Proszkowa Żyrardów</title>
+        <meta
+          name="description"
+          content="Lakiernia proszkowa, renowacja i malowanie felg, felgi, prostowanie, spawanie, malowanie proszkowe, wynajem aut, wynajem agregatu. Żyrardów / Korytów."
+        />
+        <meta name="keywords" content="lakiernia proszkowa, renowacja felg, felgi, wynajem, malowanie metalu, malowanie proszkowe, spawanie, prostowanie, wynajem, bus, auto dostawcze, agregat, duża moc, Żyrardów, Korytów, mazowieckie, Warszawa" />
+        <link rel="canonical" href="https://felgi-Kordes.pl/" />
+      </Helmet>
+
     <Container>
       <Head>
         <Logo>
@@ -288,5 +299,6 @@ export default function AboutKordes() {
         </aside>
       </Grid>
     </Container>
+    </>
   );
 }

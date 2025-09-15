@@ -24,7 +24,7 @@ import {
   TitleBox,
 } from "./styled";
 
-import f from "../../images/felga.png";
+import f from "../../images/felga.webp";
 import g0 from "../../images/Felgi/0.JPG";
 import g1 from "../../images/Felgi/1.JPG";
 import g2 from "../../images/Felgi/2.JPG";
@@ -59,14 +59,14 @@ import t3 from "../../videos/toczenie3.mp4";
 import z1 from "../../images/z1.JPG";
 import z2 from "../../images/z2.JPG";
 import z3 from "../../images/z3.JPG";
-import z4 from "../../images/z4.JPG";
+import z4 from "../../images/z4.webp";
 import z5 from "../../images/z5.JPG";
-import z6 from "../../images/z6.JPG";
-import s1 from "../../images/s1.JPG";
-import s2 from "../../images/s2.JPG";
-import s3 from "../../images/s3.JPG";
-import s4 from "../../images/s4.JPG";
-import s5 from "../../images/s5.jpg";
+import z6 from "../../images/z6.webp";
+import s1 from "../../images/s1.webp";
+import s2 from "../../images/s2.webp";
+import s3 from "../../images/s3.webp";
+import s4 from "../../images/s4.webp";
+import s5 from "../../images/s5.webp";
 
 import pp1 from "../../images/Felgi/pp1.jpg";
 import pp2 from "../../images/Felgi/pp2.jpg";

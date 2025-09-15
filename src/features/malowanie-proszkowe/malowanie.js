@@ -1,5 +1,5 @@
 import Gallery from "react-photo-gallery";
-import g from "../../images/gun10.png";
+import g from "../../images/gun10.webp";
 import g0 from "../../images/Malowanie/0.JPG";
 import g1 from "../../images/Malowanie/1.JPG";
 import g2 from "../../images/Malowanie/2.JPG";

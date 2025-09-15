@@ -12,7 +12,7 @@ import { BrowserRouter, useLocation } from "react-router-dom/cjs/react-router-do
 import { useEffect } from "react";
 import { Wynajem } from "../features/wynajem/wynajem";
 import GoToTopButton from "../common/GoUp/GoUp";
-
+import { HelmetProvider } from "react-helmet-async";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -26,6 +26,7 @@ function ScrollToTop() {
 function App() {
   return (
     <>
+      <HelmetProvider>
       <GlobalStyle />
       <HashRouter>
         <ScrollToTop />
@@ -56,6 +57,7 @@ function App() {
         <Footer />
       <GoToTopButton showAt={250} size={56} shape="rounded" />
       </HashRouter>
+      </HelmetProvider>
     </>
   );
 }

@@ -1,7 +1,7 @@
-import z1 from "../../images/m1.jpg";
-import z2 from "../../images/m2.jpg";
-import f1 from "../../images/fe1.jpg";
-import f2 from "../../images/fe2.jpg";
+import z1 from "../../images/m1.webp";
+import z2 from "../../images/m2.webp";
+import f1 from "../../images/fe1.webp";
+import f2 from "../../images/fe2.webp";
 import ag4 from "../../images/agregat/ag4.jpg";
 import ag5 from "../../images/agregat/ag5.jpg";
 import { List, SingleTile, Text, TilesNav } from "./styled";

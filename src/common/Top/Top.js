@@ -1,6 +1,6 @@
-import logo from "../../images/logo.png";
+import logo from "../../images/logo.webp";
 import { BannerWrapper, Logo, ScrollingText, ScrollingText2, Wrapper } from "./styled";
-import bg from "../../images/background.png";
+import bg from "../../images/background.webp";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 
