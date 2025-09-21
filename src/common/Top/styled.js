@@ -163,7 +163,7 @@ export const TilesNav = styled.nav`
   max-width: 100%;
   margin-bottom: 35px;
 `;
-export const SingleTile = styled.li`
+export const SingleTile = styled.div`
   position: relative;
   overflow: hidden;
   user-select: none;
@@ -336,7 +336,7 @@ export const SingleTile = styled.li`
   }
 `;
 
-export const List = styled.ul`
+export const List = styled.div`
   margin: 0;
   list-style: none;
   padding: 0%;
@@ -355,7 +355,7 @@ export const List = styled.ul`
   }
 `;
 
-export const ListF2 = styled.ul`
+export const ListF2 = styled.div`
   margin: 0;
   list-style: none;
   padding: 0%;

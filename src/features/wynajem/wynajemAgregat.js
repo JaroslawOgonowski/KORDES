@@ -37,9 +37,9 @@ const Container = styled.section`
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial;
 
-    @media (max-width: 960px) {
+  @media (max-width: 960px) {
     padding: 16px;
-    }
+  }
 `;
 
 // const Section = styled.div`
@@ -79,7 +79,7 @@ const Card = styled.div`
 
   @media (max-width: 960px) {
     padding: 8px;
-    }
+  }
 `;
 
 const List = styled.ul`
@@ -129,10 +129,10 @@ export const WynajemAgregat = () => {
           Wynajem agregatu prądotwórczego Siltec 110 kVa – mobilne źródło
           energii w każdych warunkach
         </Title>
- <BIO />
-       
+        <BIO />
+        <Subtitle>Dane techniczne urządzenia </Subtitle>
+        <table>
         <TableCenter>
-          <Subtitle>Dane techniczne urządzenia </Subtitle>
           <TableRow
             title="Marka i model agregatu"
             description="Siltec 110 kVa"
@@ -156,7 +156,7 @@ export const WynajemAgregat = () => {
             description="50 Hz"
             icon={i4}
             extraPadding={0}
-          />{" "}
+          />
           <TableRow
             title="Typ
           silnika"
@@ -202,7 +202,8 @@ export const WynajemAgregat = () => {
             extraPadding={0}
           />
         </TableCenter>
-         <FotoAg>
+        </table>
+        <FotoAg>
           <ImageInVBox src={ag1} alt="Malowanie proszkowe" />
           <ImageInVBox src={ag4} alt="Malowanie proszkowe" />
           <ImageInVBox src={ag8} alt="Malowanie proszkowe" />
@@ -210,7 +211,6 @@ export const WynajemAgregat = () => {
           <ImageInVBox src={ag12} alt="Malowanie proszkowe" />
         </FotoAg>
         <Container>
-
           <Subtitle>Zastosowania</Subtitle>
           <Card>
             <List>

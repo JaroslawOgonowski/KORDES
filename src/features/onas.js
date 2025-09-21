@@ -4,6 +4,7 @@ import logo from "../images/logo.webp";
 import p from "../images/prezes.webp";
 import pracownia from "../images/pracownia.webp";
 import { Helmet } from "react-helmet-async";
+import { Mapa } from "../common/Footer";
 // --- styled-components ---
 
 
@@ -280,18 +281,7 @@ export default function AboutKordes() {
 
           <Card style={{ marginTop: "30px" }}>
             <SectionTitle>🗺️ Mapa / lokalizacja</SectionTitle>
-            <MapFrame>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1227.3051379113906!2d20.454982539024535!3d52.03219714312998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47194483240dca77%3A0x96df9603d90f73ba!2s%C5%9Awierkowa%2027%2C%2096-300%20Koryt%C3%B3w%20A!5e0!3m2!1spl!2spl!4v1757664711647!5m2!1spl!2spl"
-                width="600"
-                height="450"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Mapa KORDES"
-              ></iframe>
-            </MapFrame>
+            <Mapa/>
           </Card>
         </div>
 

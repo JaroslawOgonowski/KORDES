@@ -34,7 +34,6 @@ export const Wynajem = () => {
         <TilesNav>
           <ListF2>
             <SingleTile
-     
               to="/wynajem"
               bg={ag1}
               bgHover={ag1}
@@ -44,7 +43,6 @@ export const Wynajem = () => {
             </SingleTile>
 
             <SingleTile
-
               to="/wynajem"
               bg={b}
               bgHover={b}
@@ -52,8 +50,7 @@ export const Wynajem = () => {
             >
               <Text>Renault Trafic Long</Text>
             </SingleTile>
-             <SingleTile
-
+            <SingleTile
               to="/wynajem"
               bg={n3}
               bgHover={n3}
@@ -67,7 +64,7 @@ export const Wynajem = () => {
 
       {activeCard === "agregat" && <WynajemAgregat />}
       {activeCard === "renault" && <WynajemRenault />}
-      {activeCard === "nissan" && <WynajemNissanNT400 />} 
+      {activeCard === "nissan" && <WynajemNissanNT400 />}
       <BackToMain />
     </>
   );

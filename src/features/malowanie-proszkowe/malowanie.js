@@ -156,6 +156,7 @@ export const Malowanie = () => {
           <strong>Malowanie proszkowe</strong> to jedna z najtrwalszych i
           najbardziej estetycznych metod zabezpieczania powierzchni metalowych.
         </BIO>
+        <table style={{width: "100%", marginLeft: "-10%", boxSizing: "border-box"}}>
         <Table>
           <TableRow
             title="Odporna, gładka i równomierna powłoka"
@@ -194,7 +195,7 @@ export const Malowanie = () => {
             extraPadding={0}
           />
         </Table>
-
+</table>
         <List>
           <ListT>Etapy naszego procesu malowania proszkowego:</ListT>
           <FBox>

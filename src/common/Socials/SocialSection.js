@@ -11,7 +11,7 @@ export const SocialSection = () => {
         TikTok <SocialLogo src={tt} alt="TikTok" />
       </SocialRow>
       <SocialRow
-        href="https://www.facebook.com/kordeslakierniaproszkowa/?locale=pl_PL"
+        href="https://www.facebook.com/profile.php?id=100048795611189&locale=pl_PL"
         target="blank"
       >
         Facebook <SocialLogo src={fb} alt="Facebook" />
@@ -30,7 +30,7 @@ export const SocialsIcons = () => {
         <SocialLogo src={tt} alt="TikTok" />
       </SocialRow2>
       <SocialRow2
-        href="https://www.facebook.com/kordeslakierniaproszkowa/?locale=pl_PL"
+        href="https://www.facebook.com/profile.php?id=100048795611189&locale=pl_PL"
         target="blank"
       >
         <SocialLogo src={fb} alt="Facebook" />

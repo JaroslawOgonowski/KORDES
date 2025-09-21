@@ -193,7 +193,7 @@ export const Title = styled.h2`
   }
 `;
 
-export const Table = styled.table`
+export const Table = styled.tbody`
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -206,7 +206,7 @@ export const Table = styled.table`
     width: 100%;
   }
 `;
-export const TableCenter = styled.table`
+export const TableCenter = styled.tbody`
   width: 80%;
   margin-left: 10%;
   display: flex;
@@ -239,7 +239,7 @@ export const STableRow = styled.tr`
     margin-left: -10%;
   }
 `;
-export const STRTitle = styled.td`
+export const STRTitle = styled.div`
   @media (max-width: 960px) {
     font-size: 0.75em;
     line-height: 1.1em;
